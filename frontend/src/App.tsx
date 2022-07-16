@@ -6,7 +6,7 @@ import SalesCard from "./components/SalesCard"
 function App() {
    return(
       <>  
-      <ToastContainer/>    
+      <ToastContainer />    
       <Header/>
       <main>
       <section id="sales">

@@ -9,13 +9,13 @@ type props = {
 
 }
 
-function handleClick(id : number) {
+function handleClick(id :number) {
   axios(`${BASE_URL}/sales/${id}/notification`)
   .then(response => {
       toast.info("SMS Enviado com Sucesso!!");
   });
 }
-function NotificationButton({saleId} : props) {
+function NotificationButton( {saleId} : props) {
     return(
         <div className="dsmeta-red-btn" onClick={() => handleClick(saleId)}>
         <img src={icon} alt="Notificar" />
